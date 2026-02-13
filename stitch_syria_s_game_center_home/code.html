@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Syria's Playful Game Center Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&amp;family=Titan+One&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4ade80", 
+                        "primary-dark": "#22c55e",
+                        "accent-yellow": "#fbbf24",
+                        "accent-purple": "#a855f7",
+                        "background-light": "#f0fdf4",
+                        "background-dark": "#052e16",
+                        "card-bg": "#ffffff",
+                    },
+                    fontFamily: {
+                        "sans": ["Fredoka", "sans-serif"],
+                        "display": ["Titan One", "cursive"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "3xl": "2rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "fun": "8px 8px 0px 0px rgba(34, 197, 94, 0.2)",
+                        "fun-hover": "10px 10px 0px 0px rgba(34, 197, 94, 0.4)",
+                        "card": "0 4px 20px -2px rgba(0, 0, 0, 0.05)"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #f0fdf4;
+            background-image: radial-gradient(#86efac 2px, transparent 2px);
+            background-size: 40px 40px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;
+        }
+        .text-shadow-sm {
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+        }
+        .floating-icon {
+            position: absolute;
+            z-index: 0;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="text-gray-800 dark:text-gray-100 min-h-screen flex flex-col transition-colors duration-300 relative overflow-x-hidden">
+<div class="fixed inset-0 pointer-events-none overflow-hidden max-w-[100vw]">
+<span class="material-symbols-outlined floating-icon text-primary-dark dark:text-primary text-9xl" style="top: 10%; left: -2%; transform: rotate(-15deg);">sports_esports</span>
+<span class="material-symbols-outlined floating-icon text-accent-yellow text-8xl" style="top: 15%; right: 5%; transform: rotate(15deg);">star</span>
+<span class="material-symbols-outlined floating-icon text-accent-purple text-9xl" style="bottom: 10%; left: 5%; transform: rotate(-10deg);">grid_view</span>
+<span class="material-symbols-outlined floating-icon text-primary text-8xl" style="bottom: 20%; right: -2%; transform: rotate(20deg);">pest_control_rodent</span>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-green-300/20 to-yellow-200/20 rounded-full blur-3xl -z-10"></div>
+</div>
+<header class="sticky top-4 z-50 w-full px-4 md:px-6">
+<div class="max-w-7xl mx-auto bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-2 border-green-100 dark:border-green-900 rounded-2xl shadow-sm h-20 flex items-center justify-between px-6">
+<div class="flex items-center gap-3">
+<div class="bg-gradient-to-br from-primary to-primary-dark p-2.5 rounded-xl shadow-md flex items-center justify-center transform hover:rotate-6 transition-transform">
+<span class="material-symbols-outlined text-white text-3xl">sports_esports</span>
+</div>
+<h2 class="text-2xl font-display text-primary-dark dark:text-primary tracking-wide">Syria's Game Center</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-lg font-semibold hover:text-primary transition-colors relative group" href="#">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-1 bg-primary rounded-full transition-all group-hover:w-full"></span>
+</a>
+<a class="text-lg font-semibold hover:text-primary transition-colors relative group" href="#">
+                    Library
+                    <span class="absolute -bottom-1 left-0 w-0 h-1 bg-primary rounded-full transition-all group-hover:w-full"></span>
+</a>
+<a class="text-lg font-semibold hover:text-primary transition-colors relative group" href="#">
+                    Stats
+                    <span class="absolute -bottom-1 left-0 w-0 h-1 bg-primary rounded-full transition-all group-hover:w-full"></span>
+</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-white px-6 py-2.5 rounded-xl text-base font-bold hover:bg-gray-200 dark:hover:bg-white/20 transition-all border border-gray-200 dark:border-transparent">
+                    Sign In
+                </button>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-start py-12 px-6 relative z-10">
+<div class="w-full max-w-4xl text-center mb-16 space-y-6">
+<span class="inline-block px-6 py-2 bg-white dark:bg-white/10 border-2 border-primary/30 text-primary-dark dark:text-primary text-sm font-bold uppercase tracking-wider rounded-full shadow-sm transform hover:scale-105 transition-transform">
+                ✨ The Fun Zone
+            </span>
+<h1 class="font-display text-5xl md:text-7xl text-gray-900 dark:text-white leading-tight drop-shadow-sm">
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-dark to-primary">吞点</span>避障 <br class="md:hidden"/>
+                拼块<span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-yellow to-orange-400">消行</span>
+</h1>
+<p class="text-gray-600 dark:text-gray-300 text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+                Jump into a world of vibrant fun! Classic games reimagined with a splash of color and infinite excitement.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-5xl">
+<div class="group relative bg-white dark:bg-green-950 rounded-3xl border-4 border-green-100 dark:border-green-800 hover:border-primary transition-all duration-300 shadow-fun hover:shadow-fun-hover hover:-translate-y-2">
+<div class="p-4 pb-0">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden relative shadow-inner">
+<div class="absolute inset-0 bg-gradient-to-tr from-green-400/20 to-yellow-200/20 mix-blend-overlay z-10"></div>
+<div class="w-full h-full bg-cover bg-center transform group-hover:scale-110 transition-transform duration-700 ease-out" data-alt="Retro minimalist pixel art of a snake game" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCziyWfbh7TpIuI2s4LXIzJrtuQuYwly5t3JEnJaKy_GGpTS00t_GkaduzPVAWYY--iNsraiQcVPnQYzx_P17n1_WHaaRegZwIvx3oheqa869ljEFFqjnFbO0_CS1PzW8_Rp8qySOE8R-Mquz8lJJP5n3xn6Xb1rYxlj1E4m_iPMrJYTIjTelthq0qpFHpuRlm9iaC95nWZBcBGvDcg0ILHUji75V5oJrbzHwJIDYzkrgP3H8ZD5hiusykVqBg3_Dzw_tq9ivbrJN8c');">
+</div>
+<div class="absolute top-4 right-4 z-20 bg-white/90 dark:bg-black/50 backdrop-blur px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-sm text-primary">star</span> Popular
+                        </div>
+</div>
+</div>
+<div class="p-8 pt-6">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-14 h-14 rounded-2xl bg-green-100 dark:bg-green-900 flex items-center justify-center text-primary-dark dark:text-primary">
+<span class="material-symbols-outlined text-4xl">pest_control_rodent</span>
+</div>
+<div>
+<h3 class="font-display text-3xl text-gray-800 dark:text-white">Snake</h3>
+<div class="flex gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-green-400"></span>
+<span class="w-2 h-2 rounded-full bg-green-400"></span>
+<span class="w-2 h-2 rounded-full bg-green-400"></span>
+</div>
+</div>
+</div>
+<p class="text-gray-500 dark:text-gray-300 mb-8 font-medium leading-relaxed">
+                        Slither around, munch on yummy dots, and grow super long! Watch out for your tail!
+                    </p>
+<button class="w-full bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-green-600 text-white text-lg py-4 rounded-2xl font-display uppercase tracking-wide shadow-lg shadow-green-200 dark:shadow-none flex items-center justify-center gap-3 transition-all transform active:scale-95 group-hover:shadow-xl">
+<span class="material-symbols-outlined">play_circle</span>
+                        Play Now
+                    </button>
+</div>
+</div>
+<div class="group relative bg-white dark:bg-green-950 rounded-3xl border-4 border-green-100 dark:border-green-800 hover:border-primary transition-all duration-300 shadow-fun hover:shadow-fun-hover hover:-translate-y-2">
+<div class="p-4 pb-0">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden relative shadow-inner">
+<div class="absolute inset-0 bg-gradient-to-tr from-purple-400/20 to-blue-200/20 mix-blend-overlay z-10"></div>
+<div class="w-full h-full bg-cover bg-center transform group-hover:scale-110 transition-transform duration-700 ease-out" data-alt="Colorful geometric tetris blocks falling downwards" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGsWl42bnzWAdsZ4_rgfJY5XoFG-LwveyJSLY7KMnmOISYJJgfN2UcikafFrehQdkZYcYUc5ojN06gplG-ZmBm7L1NI9pz6wkO1nvOR1No7RJxTvW21CyJlFaHjxvcQo7XwDvPoGihTOEERnJhhBuZb30F7KKg94S5aPK3ZYeV0vuvY48Fn2BLtBdH4R9iPV-XNulL4bbyWukW9Z806AdUF16HWaI4i3DxAJQ6hmHf9hreELJYh_tHqT1ppyfgdOfkWe9lQ66NocwP');">
+</div>
+<div class="absolute top-4 right-4 z-20 bg-white/90 dark:bg-black/50 backdrop-blur px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-sm text-accent-purple">extension</span> Puzzle
+                        </div>
+</div>
+</div>
+<div class="p-8 pt-6">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-14 h-14 rounded-2xl bg-purple-100 dark:bg-purple-900/40 flex items-center justify-center text-accent-purple">
+<span class="material-symbols-outlined text-4xl">widgets</span>
+</div>
+<div>
+<h3 class="font-display text-3xl text-gray-800 dark:text-white">Tetris</h3>
+<div class="flex gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-purple-400"></span>
+<span class="w-2 h-2 rounded-full bg-purple-400"></span>
+<span class="w-2 h-2 rounded-full bg-purple-400"></span>
+</div>
+</div>
+</div>
+<p class="text-gray-500 dark:text-gray-300 mb-8 font-medium leading-relaxed">
+                        Stack the colorful blocks, clear the lines, and aim for the high score before the screen fills up!
+                    </p>
+<button class="w-full bg-gradient-to-r from-accent-purple to-purple-600 hover:from-purple-600 hover:to-purple-800 text-white text-lg py-4 rounded-2xl font-display uppercase tracking-wide shadow-lg shadow-purple-200 dark:shadow-none flex items-center justify-center gap-3 transition-all transform active:scale-95 group-hover:shadow-xl">
+<span class="material-symbols-outlined">play_circle</span>
+                        Play Now
+                    </button>
+</div>
+</div>
+</div>
+<div class="mt-20 flex flex-col items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center animate-bounce">
+<span class="material-symbols-outlined text-yellow-500 text-4xl">construction</span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-lg font-bold uppercase tracking-widest font-display">More Games Coming Soon</p>
+</div>
+</main>
+<footer class="mt-auto border-t-2 border-green-100 dark:border-green-900 bg-white/80 dark:bg-background-dark/90 backdrop-blur-sm relative z-10">
+<div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex flex-col items-center md:items-start gap-3">
+<div class="flex items-center gap-2">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-white text-lg">sports_esports</span>
+</div>
+<p class="text-xl font-display text-gray-800 dark:text-white">Syria Game Center</p>
+</div>
+<p class="text-gray-400 font-medium">© 2023 syria. Made with Fun!</p>
+</div>
+<div class="flex gap-8 bg-green-50 dark:bg-white/5 px-6 py-3 rounded-full">
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors font-bold" href="#">Privacy</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors font-bold" href="#">Terms</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors font-bold" href="#">About</a>
+</div>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full bg-white dark:bg-gray-800 border-2 border-green-100 dark:border-gray-700 flex items-center justify-center text-gray-500 hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm hover:scale-110" href="#">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M104,140a12,12,0,1,1-12-12A12,12,0,0,1,104,140Zm60-12a12,12,0,1,0,12,12A12,12,0,0,0,164,128Zm74.45,64.9-67,29.71a16.17,16.17,0,0,1-21.71-9.1l-8.11-22q-6.72.45-13.63.46t-13.63-.46l-8.11,22a16.18,16.18,0,0,1-21.71,9.1l-67-29.71a15.93,15.93,0,0,1-9.06-18.51L38,58A16.07,16.07,0,0,1,51,46.14l36.06-5.93a16.22,16.22,0,0,1,18.26,11.88l3.26,12.84Q118.11,64,128,64t19.4.93l3.26-12.84a16.21,16.21,0,0,1,18.26-11.88L205,46.14A16.07,16.07,0,0,1,218,58l29.53,116.38A15.93,15.93,0,0,1,238.45,192.9ZM232,178.28,202.47,62s0,0-.08,0L166.33,56a.17.17,0,0,0-.17,0l-2.83,11.14c5,.94,10,2.06,14.83,3.42A8,8,0,0,1,176,86.31a8.09,8.09,0,0,1-2.16-.3A172.25,172.25,0,0,0,128,80a172.25,172.25,0,0,0-45.84,6,8,8,0,1,1-4.32-15.4c4.82-1.36,9.78-2.48,14.82-3.42L89.83,56s0,0-.12,0h0L53.61,61.93a.17.17,0,0,0-.09,0L24,178.33,91,208a.23.23,0,0,0,.22,0L98,189.72a173.2,173.2,0,0,1-20.14-4.32A8,8,0,0,1,82.16,170,171.85,171.85,0,0,0,128,176a171.85,171.85,0,0,0,45.84-6,8,8,0,0,1,4.32,15.41A173.2,173.2,0,0,1,158,189.72L164.75,208a.22.22,0,0,0,.21,0Z"></path></svg>
+</a>
+<a class="w-12 h-12 rounded-full bg-white dark:bg-gray-800 border-2 border-green-100 dark:border-gray-700 flex items-center justify-center text-gray-500 hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm hover:scale-110" href="#">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path></svg>
+</a>
+<a class="w-12 h-12 rounded-full bg-white dark:bg-gray-800 border-2 border-green-100 dark:border-gray-700 flex items-center justify-center text-gray-500 hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm hover:scale-110" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+</div>
+</div>
+</footer>
+
+</body></html>
